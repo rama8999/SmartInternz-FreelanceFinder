@@ -1,0 +1,365 @@
+.projects-page {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+}
+
+.projects-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+.filters-sidebar {
+    width: 200px;
+    flex-shrink: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+}
+
+.filters-sidebar h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-section h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    cursor: pointer;
+    font-size: 13px;
+    color: #666;
+}
+
+.filter-checkbox input {
+    width: 16px;
+    height: 16px;
+    accent-color: #C75B5B;
+    cursor: pointer;
+}
+
+.projects-list {
+    flex: 1;
+}
+
+.projects-list h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left-color: #C75B5B;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.project-title {
+    font-size: 17px;
+    font-weight: 500;
+    color: #C75B5B;
+    line-height: 1.4;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.project-date {
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+}
+
+.project-budget {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.project-description {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.project-skills .skill-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #666;
+}
+
+.project-bids {
+    font-size: 13px;
+    color: #666;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+}
+
+/* My Projects */
+.my-projects-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+.my-projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.my-projects-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.status-filter {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    min-width: 140px;
+}
+
+.status-filter:focus {
+    outline: none;
+    border-color: #C75B5B;
+}
+
+.my-projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.my-project-card {
+    background: #fff;
+    padding: 25px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.my-project-card:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.my-project-card:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: none;
+}
+
+.my-project-card .project-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #C75B5B;
+    margin-bottom: 8px;
+}
+
+.my-project-card .project-budget {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.my-project-card .project-description {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.my-project-card .project-date {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.project-status {
+    font-weight: 500;
+    color: #333;
+    font-size: 13px;
+}
+
+.work-btn {
+    margin-top: 12px;
+    padding: 8px 20px;
+    background: transparent;
+    color: #C75B5B;
+    border: 1px solid #C75B5B;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+.work-btn:hover {
+    background: #C75B5B;
+    color: #fff;
+}
+
+.no-projects {
+    text-align: center;
+    color: #999;
+    padding: 40px;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* Project Data Page */
+.project-data-page {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+}
+
+.project-data-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    margin-top: 30px;
+}
+
+.required-skills {
+    margin: 20px 0;
+}
+
+.required-skills h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.budget-label {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.budget-amount {
+    font-size: 24px;
+    font-weight: 600;
+    color: #C75B5B;
+}
+
+.apply-section {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+
+.apply-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.proposal-input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.bid-input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.apply-btn {
+    padding: 12px;
+    background: #C75B5B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.apply-btn:hover {
+    background: #a84848;
+}
+
+.already-applied {
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    color: #2e7d32;
+    font-size: 14px;
+}
